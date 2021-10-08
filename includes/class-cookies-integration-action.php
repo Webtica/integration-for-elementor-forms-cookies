@@ -80,6 +80,21 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 			]
 		);
 
+		$widget->add_control(
+			'cookie_time',
+			[
+				'label' => __( 'Cookie time', 'cookies-elementor-integration' ),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'placeholder' => '3600',
+				'label_block' => true,
+				'separator' => 'before',
+				'description' => __( 'Enter your cookie time in seconds', 'cookies-elementor-integration' ),
+				'dynamic' => [
+					'active' => true,
+				],
+			]
+		);
+
 		$widget->end_controls_section();
 
 	}
@@ -122,6 +137,13 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 			return;
 		}
 
+		//  if cookietime is empty set to 3600
+		if ( empty( $settings['cookie_time'] ) ) {
+			$cookietime = 3600;
+		} else{
+			$cookietime = $settings['cookie_time'];
+		}
+
 		// Get submitted Form data
 		$raw_fields = $record->get( 'fields' );
 
@@ -131,13 +153,8 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 			$fields[ $id ] = $field['value'];
 		}
 
-		$cookiepath = '/';
-
 		//Set cookie here
-		//setcookie('test', 'test', time()+3600, "/");
-		//setcookie($settings['cookie_name'], $settings['cookie_value'], time()+3600, "/");
-
-
+		setcookie($settings['cookie_name'], $settings['cookie_value'], time()+$cookietime, "/");
 
 	}
 }
