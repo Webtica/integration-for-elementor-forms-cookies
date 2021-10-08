@@ -109,7 +109,8 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 	public function on_export( $element ) {
 		unset(
 			$element['cookie_name'],
-			$element['cookie_value']
+			$element['cookie_value'],
+			$element['cookie_time']
 		);
 
 		return $element;
