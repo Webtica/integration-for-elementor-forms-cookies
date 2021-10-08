@@ -141,7 +141,7 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 		//  if cookietime is empty set to 3600
 		if ( empty( $settings['cookie_time'] ) ) {
 			$cookietime = 3600;
-		} else{
+		} else {
 			$cookietime = $settings['cookie_time'];
 		}
 
