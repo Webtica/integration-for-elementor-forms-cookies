@@ -43,7 +43,7 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 		$widget->start_controls_section(
 			'section_cookies-elementor-integration',
 			[
-				'label' => __( 'Sendinblue', 'cookies-elementor-integration' ),
+				'label' => __( 'Cookies', 'cookies-elementor-integration' ),
 				'condition' => [
 					'submit_actions' => $this->get_name(),
 				],
