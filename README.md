@@ -26,7 +26,7 @@ Feel free to post any feature requests and possible issues.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to Pages > Add New
 4. Press the 'Edit with Elementor' button.
-5. Drag and drop the form widget of Elementor Pro from the left panel onto the content area, and find the Sendinblue action in the "Actions after submit" dropdown.
+5. Drag and drop the form widget of Elementor Pro from the left panel onto the content area, and find the Cookies action in the "Actions after submit" dropdown.
 6. Fill your cookie data and you are all set.
 
 

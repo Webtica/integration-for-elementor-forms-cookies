@@ -131,9 +131,11 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 			$fields[ $id ] = $field['value'];
 		}
 
+		$cookiepath = '/';
 
 		//Set cookie here
-
+		//setcookie('test', 'test', time()+3600, "/");
+		//setcookie($settings['cookie_name'], $settings['cookie_value'], time()+3600, "/");
 
 
 
