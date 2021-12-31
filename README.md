@@ -19,7 +19,6 @@ Feel free to post any feature requests and possible issues.
 * MySQL version 5.6 or greater
 * WordPress Memory limit of 64 MB or greater (128 MB or higher is preferred)
 
-
 ## Installation
 
 1. Install using the WordPress built-in Plugin installer, or Extract the zip file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
@@ -28,7 +27,6 @@ Feel free to post any feature requests and possible issues.
 4. Press the 'Edit with Elementor' button.
 5. Drag and drop the form widget of Elementor Pro from the left panel onto the content area, and find the Cookies action in the "Actions after submit" dropdown.
 6. Fill your cookie data and you are all set.
-
 
 ## Frequently Asked Questions
 
@@ -40,7 +38,19 @@ Because this integration works with the Form Widget, which is a Elementor Pro un
 
 Yes, all the other form widget integrations will be available.
 
+**How can I use form data to set as cookie name or value?**
+
+Be sure you are atleast on version 1.2.0. Then you can enable the switch "Use form data for cookie name" and/or "Use form data for cookie value". After that fill in the fields with the form field id you can find under the form field advanced tab.
+
 ## Changelog
+
+### 1.2.0 - 31-12-2021
+* Add option to use form data for cookie name
+* Add option to use form data for cookie value
+* Tested PHP up to 8.0
+* Add link to the support page
+* Tested Elementor up to 3.5.3
+* Update recommended PHP version to 7.4
 
 ### 1.0.1 - 04-12-2021
 * Tested elementor up to 3.4.8

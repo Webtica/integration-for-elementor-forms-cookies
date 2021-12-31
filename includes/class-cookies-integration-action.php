@@ -51,6 +51,16 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 		);
 
 		$widget->add_control(
+			'cookies_set_form_form_name',
+			[
+				'label' => __( 'Use form data for cookie name', 'cookies-elementor-integration' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'separator' => 'before',
+				'description' => __( 'When enabled you can enter the form field id in the cookie name field below', 'cookies-elementor-integration' ),
+			]
+		);
+
+		$widget->add_control(
 			'cookie_name',
 			[
 				'label' => __( 'Cookie name', 'cookies-elementor-integration' ),
@@ -62,6 +72,16 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 				'dynamic' => [
 					'active' => true,
 				],
+			]
+		);
+
+		$widget->add_control(
+			'cookies_set_form_form_value',
+			[
+				'label' => __( 'Use form data for cookie value', 'cookies-elementor-integration' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'separator' => 'before',
+				'description' => __( 'When enabled you can enter the form field id in the cookie value field below', 'cookies-elementor-integration' ),
 			]
 		);
 
@@ -109,7 +129,9 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 	public function on_export( $element ) {
 		unset(
 			$element['cookie_name'],
+			$element['cookies_set_form_form_name'],
 			$element['cookie_value'],
+			$element['cookies_set_form_form_value'],
 			$element['cookie_time']
 		);
 
@@ -154,8 +176,25 @@ class Cookies_Integration_Action_After_Submit extends \ElementorPro\Modules\Form
 			$fields[ $id ] = $field['value'];
 		}
 
-		//Set cookie here
-		setcookie($settings['cookie_name'], $settings['cookie_value'], time()+$cookietime, "/");
+		//Check if switch is set to use form data - cookie name
+		$useformdataforname = $settings['cookies_set_form_form_name'];
+		if ($useformdataforname == "yes") {
+			$cookiename = $fields[$settings['cookie_name']];
+		}
+		else {
+			$cookiename = $settings['cookie_name'];
+		}
 
+		//Check if switch is set to use form data - cookie value
+		$useformdataforvalue = $settings['cookies_set_form_form_value'];
+		if ($useformdataforvalue == "yes") {
+			$cookievalue = $fields[$settings['cookie_value']];
+		}
+		else {
+			$cookievalue = $settings['cookie_value'];
+		}
+
+		//Set cookie here
+		setcookie($cookiename, $cookievalue, time()+$cookietime, "/");
 	}
 }

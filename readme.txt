@@ -4,7 +4,7 @@ Tags: sendinblue, elementor, elementor pro, forms, integration, marketing, lists
 Requires at least: 5.0
 Tested up to: 5.8.2
 Requires PHP: 5.4
-Stable tag: 1.0.1
+Stable tag: 1.2.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,7 +25,7 @@ Feel free to post any feature requests and possible issues.
 
 = We recommend your host supports: =
 
-* PHP version 7.0 or greater
+* PHP version 7.4 or greater
 * MySQL version 5.6 or greater
 * WordPress Memory limit of 64 MB or greater (128 MB or higher is preferred)
 
@@ -48,10 +48,22 @@ Because this integration works with the Form Widget, which is a Elementor Pro un
 
 Yes, all the other form widget integrations will be available.
 
+**How can I use form data to set as cookie name or value?**
+
+Be sure you are atleast on version 1.2.0. Then you can enable the switch "Use form data for cookie name" and/or "Use form data for cookie value". After that fill in the fields with the form field id you can find under the form field advanced tab.
+
 == Changelog ==
 
+= 1.2.0 - 2021-12-31 =
+* Add option to use form data for cookie name
+* Add option to use form data for cookie value
+* Tested PHP up to 8.0
+* Add link to the support page
+* Tested Elementor up to 3.5.3
+* Update recommended PHP version to 7.4
+
 = 1.0.1 - 2021-12-04 =
-* Tested elementor up to 3.4.8
+* Tested Elementor up to 3.4.8
 * Tested Elementor Pro up to 3.5.2
 * Tested Wordpress up to 5.8.2
 
