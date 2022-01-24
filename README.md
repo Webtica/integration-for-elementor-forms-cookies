@@ -44,6 +44,10 @@ Be sure you are atleast on version 1.2.0. Then you can enable the switch "Use fo
 
 ## Changelog
 
+### 1.2.1 - 24-01-2022
+* Tested Elementor up to 3.5.4
+* Tested Wordpress up to 5.9
+
 ### 1.2.0 - 31-12-2021
 * Add option to use form data for cookie name
 * Add option to use form data for cookie value

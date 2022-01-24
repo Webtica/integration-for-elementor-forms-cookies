@@ -5,8 +5,8 @@
  * Description: Easily set cookies after an elementor form submission.
  * Author: Webtica
  * Author URI: https://webtica.be/
- * Version: 1.2.0
- * Elementor tested up to: 3.5.3
+ * Version: 1.2.1
+ * Elementor tested up to: 3.5.4
  * Elementor Pro tested up to: 3.5.2
  */
 
