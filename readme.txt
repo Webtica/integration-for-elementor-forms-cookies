@@ -1,10 +1,10 @@
 === Integration for Elementor forms - Cookies ===
 Contributors: webtica
-Tags: sendinblue, elementor, elementor pro, forms, integration, marketing, lists, send, blue, automation
+Tags: cookies, elementor, elementor pro, forms, integration, marketing, lists, cookie, session, set
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 5.9.2
 Requires PHP: 5.4
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -53,6 +53,11 @@ Yes, all the other form widget integrations will be available.
 Be sure you are atleast on version 1.2.0. Then you can enable the switch "Use form data for cookie name" and/or "Use form data for cookie value". After that fill in the fields with the form field id you can find under the form field advanced tab.
 
 == Changelog ==
+
+= 1.2.2 - 2022-03-13 =
+* Tested Elementor up to 3.5.6
+* Tested Elementor PRO up to 3.6.3
+* Tested Wordpress up to 5.9.2
 
 = 1.2.1 - 2022-01-24 =
 * Tested Elementor up to 3.5.4
