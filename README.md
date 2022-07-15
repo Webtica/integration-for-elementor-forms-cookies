@@ -44,6 +44,11 @@ Be sure you are atleast on version 1.2.0. Then you can enable the switch "Use fo
 
 ## Changelog
 
+###  1.2.4 - 15-07-2022 
+* Tested Elementor PRO up to 3.7.2
+* Tested Elementor up to 3.6.7
+* Tested WordPress up to 6.0.1
+
 ### 1.2.3 - 08-05-2022
 * Tested Elementor up to 3.6.5
 * Tested Elementor PRO up to 3.6.5
