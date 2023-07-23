@@ -2,9 +2,9 @@
 Contributors: webtica
 Tags: cookies, elementor, elementor pro, forms, integration, marketing, lists, cookie, session, set
 Requires at least: 5.0
-Tested up to: 6.0.1
-Requires PHP: 5.4
-Stable tag: 1.2.4
+Tested up to: 6.3
+Requires PHP: 7.0
+Stable tag: 1.2.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,7 +19,7 @@ Feel free to post any feature requests and possible issues.
 = Minimum Requirements =
 
 * WordPress 5.0 or greater
-* PHP version 5.4 or greater
+* PHP version 7.0 or greater
 * MySQL version 5.0 or greater
 * [Elementor Pro](https://elementor.com) 3 or greater
 
@@ -53,6 +53,17 @@ Yes, all the other form widget integrations will be available.
 Be sure you are atleast on version 1.2.0. Then you can enable the switch "Use form data for cookie name" and/or "Use form data for cookie value". After that fill in the fields with the form field id you can find under the form field advanced tab.
 
 == Changelog ==
+
+= 1.2.6 - 2023-07-23 =
+* Change minimum PHP version to 7.0
+* Tested Elementor PRO up to 3.14.1
+* Tested Elementor up to 3.14.1
+* Tested WordPress up to 6.3
+
+= 1.2.5 - 2022-11-05 =
+* Tested Elementor PRO up to 3.8.0
+* Tested Elementor up to 3.8.0
+* Tested WordPress up to 6.1
 
 = 1.2.4 - 2022-07-15 =
 * Tested Elementor PRO up to 3.7.2
